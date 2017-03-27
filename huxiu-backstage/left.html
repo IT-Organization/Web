@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>left</title>
+	<link rel="stylesheet" type="text/css" href="css/backstage.css">
+</head>
+<body>
+	<div class="left" id="left">
+		<ul>
+			<li onclick="showUl(this)">
+				<h1>文章</h1>
+				<ul id="hide01">
+					<li><a href="#">资讯</a></li>
+					<li><a href="#">短趣</a></li>
+					<li><a href="#">活动</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li onclick="showUl(this)">
+				<h1>管理员</h1>
+				<ul id="hide02">
+					<li><a href="#">最近删除</a></li>
+					<li><a href="#">信息修改</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+<script>
+
+
+function showUl(obj){
+		var aUl = obj.getElementsByTagName("ul")[0];
+		if(aUl.style.display != "block"){
+			aUl.style.display = "block";
+		}
+		else {
+			aUl.style.display = "none";
+		}
+		
+	}
+
+var hide01 = document.getElementById("hide01");
+var hide02 = document.getElementById("hide02");
+hide01.onclick=function(event){
+  // 停止DOM事件层次传播
+  event.stopPropagation();
+};
+hide02.onclick=function(event){
+  // 停止DOM事件层次传播
+  event.stopPropagation();
+};
+
+
+</script>
+</html>
