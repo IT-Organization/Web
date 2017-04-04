@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>虎嗅网</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/topnav.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<script type="text/javascript" src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/topnav.js"></script>
+	<script type="text/javascript" src="js/footer.js"></script>
+</head>
+<body>
+	<div class="top"><!--顶部导航栏-->
+		<div class="topNav"><!--顶部导航栏居中部分-->
+			<div class="informationNav"><!--资讯导航栏-->
+				<div class="secondNav"><!--资讯二级菜单-->
+					<ul>
+						<li><a href="">电商消费</a></li>
+						<li><a href="">娱乐淘金</a></li>
+						<li><a href="">雪花一代</a></li>
+					</ul>
+				</div>
+				<h1 id="information">资讯</h1>
+			</div>
+			<div class="logo"><!--虎嗅logo-->
+				<img src="images/logo.jpg">
+			</div>
+			<div class="activities"><!--活动按钮-->
+				<a href="">活动</a>
+			</div>
+			<div class="search"><!--手机+搜索-->
+				<a href=""><img src="images/phone.png" alt="手机客户端"></a><!--手机-->
+				<img src="images/search.png" id="search"><!--搜索按钮-->
+			</div>
+		</div>
+	</div>
+	<div class="alert"><!--搜索弹窗-->
+		<div class="alertInner">
+			<input type="text" placeholder="请输入关键词">
+			<div class="hotWords">
+				<h1>热搜词</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="topNews"><!--头条轮播+热文+短趣-->
+			<ul class="turnImg">
+				<li><a href=""><img src="images/background01.png"></a></li>
+				<li><a href=""><img src="images/background02.png"></a></li>
+				<li><a href=""><img src="images/background03.png"></a></li>
+				<li><a href=""><img src="images/background04.png"></a></li>
+			</ul>
+			<div class="turn"><!--轮播按钮-->
+				<button class="turnLeft"></button>
+				<button class="turnRight"></button>
+			</div>
+			<div class="hotInteresting"><!--热文+短趣-->
+				<div class="content"><!--热文标题-->
+					<div class="issay">
+						<a href="">
+						<h1>18年后大学文凭可能需要花费50万美元</h1>
+						</a>
+					</div>
+					<div class="issay">
+						<a href="">
+						<h1>18年后大学文凭可能需要花费50万美元</h1>
+						</a>
+					</div>
+					<div class="issay">
+						<a href="">
+						<h1>18年后大学文凭可能需要花费50万美元</h1>
+						</a>
+					</div>
+					<div class="issay">
+						<a href="">
+						<h1>18年后大学文凭可能需要花费50万美元</h1>
+						</a>
+					</div>
+					<h1 class="issayAll"><a href="">全部>></a></h1>
+				</div>
+				<div class="content displayNone" id="content"><!--短趣标题-->
+					<div class="issay">
+						<h1>这是一本可以挂在墙上的魔法日历</h1>
+					</div>
+					<div class="issay">
+						<h1>这是一本可以挂在墙上的魔法日历</h1>
+					</div>
+					<div class="issay">
+						<h1>这是一本可以挂在墙上的魔法日历</h1>
+					</div>
+					<div class="issay">
+						<h1>这是一本可以挂在墙上的魔法日历</h1>
+					</div>
+					<h1 class="issayAll"><a href="">全部>></a></h1>
+				</div>
+				<div class="titles"><!--切换按钮-->
+					<div class="hot hover"><a href="">热文</a></div>
+					<div class="interesting"><a href="">短趣</a></div>
+					<div class="spare"></div>
+				</div><!--a标签以切换到热文/短趣全部内容-->
+			</div>
+		</div>
+		<div class="shortA"><!--短趣弹窗-->
+			<div class="shortAlert">
+				<div class="close"><!--关闭按钮--></div>
+				<h1>这是一本可以挂在墙上的魔法日历</h1>
+				<div><!--相关信息-->
+					<img src="images/icon01.png">
+					<h1>发条橙子</h1>
+					<h1>7小时前</h1>
+				</div>
+				<p>给魅族设计了悬浮音响造型的日本设计师坪井浩尚最近又和Android Objects试验项目玩到了一起。让他产生设计Magic Calendar想法的原因正是出自上一段的需要，在家时不想做拿出手机，解锁，打开app这一系列动作去看日程安排；外观设计思想则是随着挂历的形态而流动，“纸与电子设备的结合”，所以使用无框电子墨水屏作为它的显示材料，让其显示Android手机上的日程安排并保持同步。</p>
+				<p><a href="">详情>></a></p>
+			</div>
+		</div>
+		<!--很多a标签……-->
+		<div class="newsList"><!--首页新闻列表-->
+			<div class="news shadow"><!--每条新闻-->
+				<div class="newsImage"><!--新闻大图-->
+					<a href="">
+					<img src="images/newsimage.png">
+					</a>
+				</div>
+				<div class="newsWriter"><!--新闻作者+标题-->
+					<a href="">
+					<div class="newsLeft">
+						<img src="images/icon01.png">
+						<p>发条橙子</p>
+					</div>
+					</a>
+					<a href="">
+						<h1>Airbnb改名为“爱彼迎”，这中文水平可以进击中国市场么？</h1>
+					</a>
+					<div class="newsReading"><!--新闻阅读信息-->
+						<button class="share"></button>
+						<button class="collect"></button>
+						<p>1222阅读</p>
+						<p>7小时前</p>
+					</div>
+				</div>
+			</div><!--新闻01-->
+			<div class="news shadow"><!--每条新闻-->
+				<div class="newsImage"><!--新闻大图-->
+					<a href="">
+					<img src="images/newsimage.png">
+					</a>
+				</div>
+				<div class="newsWriter"><!--新闻作者+标题-->
+					<a href="">
+					<div class="newsLeft">
+						<img src="images/icon01.png">
+						<p>发条橙子</p>
+					</div>
+					</a>
+					<a href="">
+						<h1>Airbnb改名为“爱彼迎”，这中文水平可以进击中国市场么？</h1>
+					</a>
+					<div class="newsReading"><!--新闻阅读信息-->
+						<button class="share"></button>
+						<button class="collect"></button>
+						<p>1222阅读</p>
+						<p>7小时前</p>
+					</div>
+				</div>
+			</div><!--新闻02-->
+			<div class="news shadow"><!--每条新闻-->
+				<div class="newsImage"><!--新闻大图-->
+					<a href="">
+					<img src="images/newsimage.png">
+					</a>
+				</div>
+				<div class="newsWriter"><!--新闻作者+标题-->
+					<a href="">
+					<div class="newsLeft">
+						<img src="images/icon01.png">
+						<p>发条橙子</p>
+					</div>
+					</a>
+					<a href="">
+						<h1>Airbnb改名为“爱彼迎”，这中文水平可以进击中国市场么？</h1>
+					</a>
+					<div class="newsReading"><!--新闻阅读信息-->
+						<button class="share"></button>
+						<button class="collect"></button>
+						<p>1222阅读</p>
+						<p>7小时前</p>
+					</div>
+				</div>
+			</div><!--新闻03-->
+			<div class="news shadow"><!--每条新闻-->
+				<div class="newsImage"><!--新闻大图-->
+					<a href="">
+					<img src="images/newsimage.png">
+					</a>
+				</div>
+				<div class="newsWriter"><!--新闻作者+标题-->
+					<a href="">
+					<div class="newsLeft">
+						<img src="images/icon01.png">
+						<p>发条橙子</p>
+					</div>
+					</a>
+					<a href="">
+						<h1>Airbnb改名为“爱彼迎”，这中文水平可以进击中国市场么？</h1>
+					</a>
+					<div class="newsReading"><!--新闻阅读信息-->
+						<button class="share"></button>
+						<button class="collect"></button>
+						<p>1222阅读</p>
+						<p>7小时前</p>
+					</div>
+				</div>
+			</div><!--新闻04-->
+		</div>
+		<div class="loading"><!--加载按钮--></div>
+		<div>
+		<a href="javascript:void(0);" id="btn_Page" class="alink">查看更多>>></a>
+		</div>
+	</div>
+	<div class="footer">
+		<ul class="footer-inf clearfix">
+			<li><a href="">关于我们</a></li>
+			<li><a href="">加入我们</a></li>
+			<li><a href="">合作伙伴</a></li>
+			<li><a href="">广告及服务</a></li>
+			<li><a href="">常见问题解答</a></li>
+			<li><a href="">防网络诈骗专题</a></li>
+		</ul>
+		<div class="weibo-wechat-qqzone clearfix">
+			<div class="footer-weibo"><a href=""></a></div>
+			<div class="footer-wechat"><a href=""></a></div>
+			<div class="footer-qqzone"><a href=""></a></div>
+		</div>
+		<div class="footer-login">
+			<div>
+				<p>All Rights Reserved. </p>
+				<a href="login.html">管理员登录</a>
+			</div>
+		</div>
+	</div >
+</body>
+<script>
+/*endlesspage.js*/  
+var gPageSize = 5;  
+var i = 1; //设置当前页数，全局变量  
+$(function () {  
+    //根据页数读取数据
+    function getData(pagenumber) {  
+        i++; //页码自动增加，保证下次调用时为新的一页。  
+        $.get("/ajax/news.JSON", { pagesize: gPageSize, pagenumber: pagenumber }, function (data) {  
+            if (data.length > 0) {  
+                var jsonObj = JSON.parse(data);  
+                insertDiv(jsonObj);  
+            }  
+        });  
+        $.ajax({  
+            type: "post",  
+            url: "/ajax/news.JSON",  
+            data: { pagesize: gPageSize, pagenumber: pagenumber },  
+            dataType: "json",  
+            success: function (data) {  
+                $(".loading").hide();  
+                if (data.length > 0) {  
+                    var jsonObj = JSON.parse(data);  
+                    insertDiv(jsonObj);  
+                }  
+            },  
+            beforeSend: function () {  
+                $(".loading").show();  
+            },  
+            error: function () {  
+                $(".loading").hide();  
+            }  
+        });  
+    }  
+    //初始化加载第一页数据  
+    getData(1);  
+  
+    //生成数据html,append到div中  
+    function insertDiv(json) {  
+        var $mainDiv = $(".newsList");  
+        var html = '';  
+        for (var i = 0; i < json.length; i++) {  
+            html += '<div class="news shadow">';  
+            html += '<div class="newsImage">' + '<a href="">' + '<img src=' + '"' + json[i].imgSrc + '">' + '</a>' + '</div>';  
+            html += '<div class="newsWriter">' + '<a href="">' + '<div class="newsLeft">' + '<img src=' + '"' + json[i].icon + '">' + '<p>' + id + '</p>' + '</div>' + '</a>' + '<a href="">' + '<h1>' + title + '</h1>' + '</a>' + '<div class="newsReading">' + '<button class="share"></button><button class="collect"></button>' + '<p>' + read + '</p>' + '<p>' + time + '</p>' + '</div>';  
+            html += '</div>';  
+        }  
+        $mainDiv.append(html);  
+    }  
+  
+    //==============核心代码=============  
+    var winH = $(window).height(); //页面可视区域高度   
+  
+    var scrollHandler = function () {  
+        var pageH = $(document.body).height();  
+        var scrollT = $(window).scrollTop(); //滚动条top   
+        var aa = (pageH - winH - scrollT) / winH;  
+        if (aa < 0.02) {//0.02是个参数  
+            if (i % 5 === 0) {//每5页做一次停顿！  
+                getData(i);  
+                $(window).unbind('scroll');  
+                $("#btn_Page").show();  
+            } else {  
+                getData(i);  
+                $("#btn_Page").hide();  
+            }  
+        }  
+    }  
+    //定义鼠标滚动事件  
+    $(window).scroll(scrollHandler);  
+    //==============核心代码=============  
+  
+    //继续加载按钮事件  
+    $("#btn_Page").click(function () {  
+        getData(i);  
+        $(window).scroll(scrollHandler);  
+    });  
+});  
+</script>
+</html>
